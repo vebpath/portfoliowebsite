@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Landing page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header data-aos ="fade-down">
+      <p>Madelyn Torff</p>
+      <div class="links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <input id="toggle" type="checkbox">
+        <label for="toggle"></label>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <p data-aos="zoom-in" class="job">UI/UX Designer</p>
+        <h1 data-aos="fade-up">Hello my name <br> is Madelyn Torff </h1>
+        <p class="bio">Short text with details about you, what you do or your professional career. You can add more information on the about page.</p>
+        <div data-aos="fade-left" class="buttons">
+          <button>Project</button>
+          <button>Linkedin</button>
+        </div>
+        <div data-aos="fade-right" class="social">
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-github"></a>
+          <a href="#" class="fa fa-reddit"></a>
+        </div>
+      </section>
+      <section>
+
+        <div class="blob">
+          <img data-aos="zoom-out" src="girl.png" >
+        </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      
+  AOS.init();
+
+      let toggleBtn = document.getElementById('toggle')
+
+      toggleBtn.addEventListener('change',()=>{
+        document.body.classList.add('dark')
+      })
+    </script>
+  </body>
+</html>
